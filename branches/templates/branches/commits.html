@@ -1,0 +1,25 @@
+{% extends "branches/base.html"%}
+{% block content %}
+<div class="col-md-6 col-auto">
+  <div class="card">
+    <div class="card-header">
+      Commits
+    </div>
+    <ul class="list-group list-group-flush">
+      {% for commit in data %}
+      <li class="list-group-item">
+        Message: {{ commit.message }}
+       <br>
+        Timestamp: {{ commit.timestamp }}
+       <br>
+        Files modified: {{ commit.files_changed }}
+       <br>
+        Branch: {{ commit.branches.branch }}
+       <br>
+        Author: {{ commit.author.first_name }} {{commit.author.last_name}}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock content %}
