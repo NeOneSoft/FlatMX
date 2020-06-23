@@ -11,7 +11,7 @@ STATUS = (
     ('MERGE', 'MERGE'),
 )
 
-
+#PR Model
 class PR(models.Model):
     merge = models.ManyToManyField(Branch, related_name='merge')
     author = models.ForeignKey(Author, on_delete=models.CASCADE)

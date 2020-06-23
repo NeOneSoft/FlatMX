@@ -3,11 +3,11 @@ from django.db import models
 from django.core.validators import MinValueValidator
 
 # Model imports
-
 from authors.models import Author
 from branches.models import Branch
 
 
+# Commit Model
 class Commit(models.Model):
     message = models.CharField(max_length=200)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)

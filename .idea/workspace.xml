@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bd87815-0e64-49ae-909e-2b768dfa69be" name="Default Changelist" comment="" />
+    <list default="true" id="9bd87815-0e64-49ae-909e-2b768dfa69be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/branches/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/templates/branches/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/templates/branches/commits.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/commits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/templates/branches/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/templates/branches/pulls.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/pulls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/branches/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/branches/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/commits/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pulls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pulls/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dgFndY1iimY03n5be8oqHJ2Oid" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,6 +41,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -61,5 +79,9 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="370" y="66" key="SettingsEditor/0.23.1440.814@0.23.1440.814" timestamp="1592839233314" />
+    <state x="413" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1592885370034">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="413" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1592885370034" />
   </component>
 </project>

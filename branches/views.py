@@ -4,7 +4,6 @@ from rest_framework import viewsets, status
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView
 
-
 # Models and Serializers
 from .models import Branch
 from .serializers import BranchSerializer
@@ -32,20 +31,28 @@ class BranchListView(ListView):
     paginate_by = 5
 
 
+# Data for Template
 class BranchDetailView(DetailView):
     model = Branch
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super().get_context_data(**kwargs)
+        # Add in a QuerySet of all the commits
+        context['commits'] = Commit.objects.filter(branches=self.object)
+        return context
 
 
 def commits(request):
     response = requests.get('http://127.0.0.1:8000/api/v1/commits')
     commits = response.json()
-    return render(request, 'branches/commits.html', {"data": commits})
+    return render(request, 'branches/commits.html', {"commits": commits})
 
 
 def pulls(request):
     response = requests.get('http://127.0.0.1:8000/api/v1/pulls')
     pulls = response.json()
-    return render(request, 'branches/pulls.html', {"data": pulls})
+    return render(request, 'branches/pulls.html', {"pulls": pulls})
 
 
 class PullCreateView(CreateView):
@@ -53,6 +60,7 @@ class PullCreateView(CreateView):
     fields = ['merge', 'author', 'title', 'description', 'status']
 
 
+# # Data for API-Rest
 class BranchViewSet(viewsets.ModelViewSet):
     """
     Branch endpoint(ViewSet)

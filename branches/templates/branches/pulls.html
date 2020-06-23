@@ -4,9 +4,11 @@
   <div class="card">
     <div class="card-header">
       Pulls
+     <br>
+     <a href="{% url 'pull-create' %}">Create Pull Request</a>
     </div>
     <ul class="list-group list-group-flush">
-      {% for pull in data %}
+      {% for pull in pulls %}
       <li class="list-group-item">
         Author: {{ pull.author.first_name }} {{pull.author.last_name}}
        <br>
@@ -27,7 +29,6 @@
       </li>
       {% endfor %}
     </ul>
-    <a href="{% url 'pull-create' %}">Create Pull Request</a>
   </div>
 </div>
 {% endblock content %}
