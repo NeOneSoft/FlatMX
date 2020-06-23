@@ -22,9 +22,17 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
-                CLOSED
+                Mark as CLOSED
             </label>
           </div>
+         <a href="{% url 'branches-pulls' %}?pull_id={{pull.id}}"
+                class="btn btn-primary btn-sm btn-note">
+            {% if pull.status %}
+             OPEN
+            {% else %}
+             CLOSED
+            {% endif %}
+         </a>
         {% endif %}
       </li>
       {% endfor %}

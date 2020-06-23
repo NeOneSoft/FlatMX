@@ -1,7 +1,10 @@
 # Django
+from urllib import request
+
 import requests
+from django.contrib import messages
 from rest_framework import viewsets, status
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView
 
 # Models and Serializers
@@ -60,7 +63,7 @@ class PullCreateView(CreateView):
     fields = ['merge', 'author', 'title', 'description', 'status']
 
 
-# # Data for API-Rest
+# Data for API-Rest
 class BranchViewSet(viewsets.ModelViewSet):
     """
     Branch endpoint(ViewSet)

@@ -23,4 +23,4 @@ class PR(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('branches-pulls')
+        return reverse('pull-create')

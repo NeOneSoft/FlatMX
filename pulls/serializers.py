@@ -14,7 +14,7 @@ class PRSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PR
-        fields = ('merge', 'author', 'title', 'description', 'status')
+        fields = ('id', 'merge', 'author', 'title', 'description', 'status')
 
 
 class CreatePRSerializer(serializers.ModelSerializer):
