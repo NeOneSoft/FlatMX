@@ -52,7 +52,7 @@ your code editor preference (PyCharm, VisualStudioCode, ...)
 - FlatMX/core/tests.py
 
 #Running unit tests cases
-1- On your code editor's terminal type the nex command:
+- On your code editor's terminal type the nex command:
 ```
                             pytest core/tests.py
 ```
