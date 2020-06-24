@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9bd87815-0e64-49ae-909e-2b768dfa69be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/branches/templates/branches/branch_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/branch_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
