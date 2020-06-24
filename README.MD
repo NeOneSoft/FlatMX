@@ -28,12 +28,12 @@ Before running please follow this steps:
 
 - 1- Open your cloned repository (located in your new folder created previously) using
 your code editor preference (PyCharm, VisualStudioCode, ...)
-- 2- Open your code editor's terminal and use "cd .." command to move one step back into directory path
+- 2- Open your code editor's terminal and use "cd .." command to move one folder back into directory path
 - 3- Activate your virtual environment using the next command(MacOS):
 ```
                             source <yourvenvname>/bin/activate
 ```
-- 4- Once you have activated your virtual environment return to your cloned repository one step forward using "cd" command 
+- 4- Once you have activated your virtual environment, return to your cloned repository (this should be one up folder) using "cd <reponame>" command 
 - 5- Install all requirements located in requirements.txt file using the next command:
 ```
                             pip install -r requirements.txt
