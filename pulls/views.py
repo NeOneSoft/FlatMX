@@ -1,10 +1,19 @@
 # Django
+from django.shortcuts import get_object_or_404, redirect, render
+from django.contrib import messages
 from rest_framework import viewsets
-
 
 # Models and Serializers
 from .models import PR
 from .serializers import PRSerializer, CreatePRSerializer
+
+
+def pull_update(request, pk):
+    pull = get_object_or_404(PR, pk=pk)
+    pull.status = 'CLOSED'
+    pull.save()
+    messages.success(request, 'Status was changed to CLOSED')
+    return render(request, 'branches/pulls.html', {"pulls": PR.objects.all()})
 
 
 class PRViewSet(viewsets.ModelViewSet):
@@ -16,6 +25,13 @@ class PRViewSet(viewsets.ModelViewSet):
             return CreatePRSerializer
         return PRSerializer
 
+    def change_status(request, pk):
+        pull = get_object_or_404(PR, pk=request.GET.get('pull_id'))
+        pull.status = not pull.status
+        pull.save()
+        return redirect('branches/pulls.html')
+
+
 """
     ############THIS FUNCTIONS DO NOT WORKS#####
     def merge(request):
@@ -26,11 +42,6 @@ class PRViewSet(viewsets.ModelViewSet):
                 messages.success(request, f'Your account has been created! You are now able to log in')
                 return redirect('pull-create')
 
-    def change_status(request, pk):
-        pull = get_object_or_404(PR, pk=request.GET.get('pull_id'))
-        pull.status = not pull.status
-        pull.save()
-        return redirect('branches/pulls.html')
 
 
 

@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bd87815-0e64-49ae-909e-2b768dfa69be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatMX/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlatMX/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatMX/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlatMX/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/branches/templates/branches/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/branches/templates/branches/pulls.html" beforeDir="false" afterPath="$PROJECT_DIR$/branches/templates/branches/pulls.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/branches/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/branches/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/branches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/branches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pulls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pulls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pulls/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pulls/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pulls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pulls/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

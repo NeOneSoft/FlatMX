@@ -3,6 +3,7 @@ from urllib import request
 
 import requests
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from rest_framework import viewsets, status
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView
@@ -58,9 +59,10 @@ def pulls(request):
     return render(request, 'branches/pulls.html', {"pulls": pulls})
 
 
-class PullCreateView(CreateView):
+class PullCreateView(SuccessMessageMixin, CreateView):
     model = PR
     fields = ['merge', 'author', 'title', 'description', 'status']
+    success_message = "Merge was success"
 
 
 # Data for API-Rest
