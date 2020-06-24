@@ -1,6 +1,6 @@
 # FlatMX
 
-Django WebApp wrapper for git projects.
+Django 3.0 WebApp wrapper for git projects.
 
 
 #Modules:
