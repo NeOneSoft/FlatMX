@@ -6,7 +6,7 @@ from pulls.views import pull_update
 from . import views
 from .views import BranchListView, PullCreateView, BranchDetailView
 
-# FRONT-END urls
+# Frontend urls
 urlpatterns = [
     path('', BranchListView.as_view(), name='branches-home'),
     path('branch/<int:pk>/', BranchDetailView.as_view(), name='branches-detail'),

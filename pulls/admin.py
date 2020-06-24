@@ -1,3 +1,11 @@
+#Django
 from django.contrib import admin
+#Model
+from .models import PR
 
-# Register your models here.
+
+@admin.register(PR)
+class PRAdmin(admin.ModelAdmin):
+    list_display = ('pk', 'author', 'title', 'description', 'status')
+    search_fields = ['author']
+    ordering = ['pk']

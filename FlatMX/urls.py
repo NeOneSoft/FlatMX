@@ -15,17 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from rest_framework.documentation import include_docs_urls
 
 from branches import views
 from branches.views import BranchListView
 
 urlpatterns = [
-    # Include Frontend Pages
+    # Include Frontend urls
     path('', BranchListView.as_view(), name='branches-home'),
     path('', include('branches.urls')),
     path('pulls/', views.pulls, name='branches-pulls'),
     # Include API v1 urls
     path('api/v1/', include('core.urls.v1')),
+    # Include Admin url
     path('admin/', admin.site.urls),
+    #Documentation
+    path('docs/', include_docs_urls(title='FlatMX APIRest', public=True))
 ]
